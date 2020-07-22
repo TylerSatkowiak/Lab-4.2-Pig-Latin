@@ -45,8 +45,8 @@ namespace Pig_Latin
                 bool TwoConsanants = TwoBeginWith(entry[0], entry[1]);
                 if (TwoConsanants == true)
                 {
-                    string build = entry.Substring(1, entry.Length-1);
-                    Console.WriteLine($"{build}{entry[0]}ay");
+                    string build = entry.Substring(2, entry.Length-2);
+                    Console.WriteLine($"{build}{entry[0]}{entry[1]}ay");
                     Restart();
                 }
 
